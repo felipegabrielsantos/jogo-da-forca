@@ -54,7 +54,7 @@ public class main {
 				mostrarAtual = mostrarAtual + mostrar[i] + " ";
 			}
 
-			String entrada = JOptionPane.showInputDialog(forca + "\n" + mostrarAtual + "\nErros: " + erros + "\nChute uma letra:");
+			String entrada = JOptionPane.showInputDialog(forca + "\n\n" + mostrarAtual + "\nErros: " + erros + "\nChute uma letra:");
 
 			switch (entrada) {
 			case "a": NumeroDaLetra = 1; break;
@@ -104,25 +104,22 @@ public class main {
 
 					switch (erros) {
 						case 1:
-						forca = "~";
+						forca = " ~";
 						break;
 						case 2:
-						forca = "Õ";
+						forca = " Õ";
 						break;
 						case 3:
-						forca =  "Õ \n  |";
+						forca =  " Õ \n  |";
 						break;
 						case 4:
-						forca = "Õ \n-|";
+						forca = " Õ \n -|";
 						break;
 						case 5:
-						forca = "Õ \n-|-";
+						forca = " Õ \n -|-";
 						break;
 						case 6:
-						forca = "Õ \n-|- \n |";
-						break;
-						case 7:
-						forca = "Õ \n-|- \n ||";
+						forca = " Õ \n -|- \n  |";
 						break;
 					}
 				}
