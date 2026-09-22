@@ -3,45 +3,45 @@ import javax.swing.JOptionPane;
 public class main {
 	public static void main(String args []) {
 		int caracteres = Integer.parseInt(JOptionPane.showInputDialog("insira a quantidade de caracteres:"));
-		int n = 0, acertos = 0, erros = 0;
+		int NumeroDaLetra = 0, acertos = 0, erros = 0;
 		int acertouEssaRodada = 0;
+		int PalavraInt[] = new int[caracteres];
+		int jaChutada[] = new int[27];
 		String forca = "";
 		String palavra[] = new String[caracteres];
 		String mostrar[] = new String[caracteres];
-		int PalavraInt[] = new int[caracteres];
-		int jaChutada[] = new int[27];
 
 		for (int i = 1; i <= caracteres; i++) {
 			palavra[i-1] = JOptionPane.showInputDialog("insira a letra da posição " + i);
 			switch (palavra[i-1]) {
-			case "a": n = 1; break;
-			case "b": n = 2; break;
-			case "c": n = 3; break;
-			case "d": n = 4; break;
-			case "e": n = 5; break;
-			case "f": n = 6; break;
-			case "g": n = 7; break;
-			case "h": n = 8; break;
-			case "i": n = 9; break;
-			case "j": n = 10; break;
-			case "k": n = 11; break;
-			case "l": n = 12; break;
-			case "m": n = 13; break;
-			case "n": n = 14; break;
-			case "o": n = 15; break;
-			case "p": n = 16; break;
-			case "q": n = 17; break;
-			case "r": n = 18; break;
-			case "s": n = 19; break;
-			case "t": n = 20; break;
-			case "u": n = 21; break;
-			case "v": n = 22; break;
-			case "w": n = 23; break;
-			case "x": n = 24; break;
-			case "y": n = 25; break;
-			case "z": n = 26; break;
+			case "a": NumeroDaLetra = 1; break;
+			case "b": NumeroDaLetra = 2; break;
+			case "c": NumeroDaLetra = 3; break;
+			case "d": NumeroDaLetra = 4; break;
+			case "e": NumeroDaLetra = 5; break;
+			case "f": NumeroDaLetra = 6; break;
+			case "g": NumeroDaLetra = 7; break;
+			case "h": NumeroDaLetra = 8; break;
+			case "i": NumeroDaLetra = 9; break;
+			case "j": NumeroDaLetra = 10; break;
+			case "k": NumeroDaLetra = 11; break;
+			case "l": NumeroDaLetra = 12; break;
+			case "m": NumeroDaLetra = 13; break;
+			case "n": NumeroDaLetra = 14; break;
+			case "o": NumeroDaLetra = 15; break;
+			case "p": NumeroDaLetra = 16; break;
+			case "q": NumeroDaLetra = 17; break;
+			case "r": NumeroDaLetra = 18; break;
+			case "s": NumeroDaLetra = 19; break;
+			case "t": NumeroDaLetra = 20; break;
+			case "u": NumeroDaLetra = 21; break;
+			case "v": NumeroDaLetra = 22; break;
+			case "w": NumeroDaLetra = 23; break;
+			case "x": NumeroDaLetra = 24; break;
+			case "y": NumeroDaLetra = 25; break;
+			case "z": NumeroDaLetra = 26; break;
 			}
-			PalavraInt[i-1] = n;
+			PalavraInt[i-1] = NumeroDaLetra;
 			mostrar[i-1] = "_";
 		}
 
@@ -57,42 +57,42 @@ public class main {
 			String entrada = JOptionPane.showInputDialog(forca + "\n" + mostrarAtual + "\nErros: " + erros + "\nChute uma letra:");
 
 			switch (entrada) {
-			case "a": n = 1; break;
-			case "b": n = 2; break;
-			case "c": n = 3; break;
-			case "d": n = 4; break;
-			case "e": n = 5; break;
-			case "f": n = 6; break;
-			case "g": n = 7; break;
-			case "h": n = 8; break;
-			case "i": n = 9; break;
-			case "j": n = 10; break;
-			case "k": n = 11; break;
-			case "l": n = 12; break;
-			case "m": n = 13; break;
-			case "n": n = 14; break;
-			case "o": n = 15; break;
-			case "p": n = 16; break;
-			case "q": n = 17; break;
-			case "r": n = 18; break;
-			case "s": n = 19; break;
-			case "t": n = 20; break;
-			case "u": n = 21; break;
-			case "v": n = 22; break;
-			case "w": n = 23; break;
-			case "x": n = 24; break;
-			case "y": n = 25; break;
-			case "z": n = 26; break;
+			case "a": NumeroDaLetra = 1; break;
+			case "b": NumeroDaLetra = 2; break;
+			case "c": NumeroDaLetra = 3; break;
+			case "d": NumeroDaLetra = 4; break;
+			case "e": NumeroDaLetra = 5; break;
+			case "f": NumeroDaLetra = 6; break;
+			case "g": NumeroDaLetra = 7; break;
+			case "h": NumeroDaLetra = 8; break;
+			case "i": NumeroDaLetra = 9; break;
+			case "j": NumeroDaLetra = 10; break;
+			case "k": NumeroDaLetra = 11; break;
+			case "l": NumeroDaLetra = 12; break;
+			case "m": NumeroDaLetra = 13; break;
+			case "n": NumeroDaLetra = 14; break;
+			case "o": NumeroDaLetra = 15; break;
+			case "p": NumeroDaLetra = 16; break;
+			case "q": NumeroDaLetra = 17; break;
+			case "r": NumeroDaLetra = 18; break;
+			case "s": NumeroDaLetra = 19; break;
+			case "t": NumeroDaLetra = 20; break;
+			case "u": NumeroDaLetra = 21; break;
+			case "v": NumeroDaLetra = 22; break;
+			case "w": NumeroDaLetra = 23; break;
+			case "x": NumeroDaLetra = 24; break;
+			case "y": NumeroDaLetra = 25; break;
+			case "z": NumeroDaLetra = 26; break;
 			}
 
-			if (jaChutada[n] == 1) {
+			if (jaChutada[NumeroDaLetra] == 1) {
 				JOptionPane.showMessageDialog(null, "Você já chutou essa letra!");
 			} else {
-				jaChutada[n] = 1;
+				jaChutada[NumeroDaLetra] = 1;
 
 				acertouEssaRodada = 0;
 				for (int i = 0; i < caracteres; i++) {
-					if (PalavraInt[i] == n) {
+					if (PalavraInt[i] == NumeroDaLetra) {
 						mostrar[i] = palavra[i];
 						acertos++;
 						acertouEssaRodada = 1;
